@@ -4,3 +4,4 @@ find . -type f -name ".*" //Find Concealed Files (change f to d for directories)
 cat numbers | grep -Po '\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b' | wc -l //Read a file and pull (-P) regex that has the pattern of an ip address, then count out all the lines
 '\b((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b' //Regex of a strict IP address from 0 to 255
 awk 'NR >= 420 && NR <=1337' numbers | sha512sum //Using awk, displaying the line range 420 to 1337 from text file numbers, then hashing it with Sha512
+shutdown /a //for windows for today
