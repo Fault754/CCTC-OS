@@ -7,3 +7,10 @@ awk 'NR >= 420 && NR <=1337' numbers | sha512sum //Using awk, displaying the lin
 shutdown /a //for windows for today
 grep -E '^([0-9a-zA-Z]{2}[:-]){5}([0-9a-zA-Z]{2})$' numbers | wc -l //Grab everything in a file that has a close layout to a MAC address
 grep -Eo '^[0-9a-fA-F][02468aAcCeE]([:-])([0-9a-fA-F]{2}\1){4}[0-9a-fA-F]{2}$' numbers | wc -l //Searches like the MAC but looking for specifically the locally or universal unicast MAC's
+lsblk //Locating the hard drive and partition in Linux
+sudo xxd -l 512 -g 1 /dev/sda //Examining the contents of the MBR with xxd
+dd if=/dev/sda of=MBRcopy bs=512 count=1 //Making a copy of the MBR with dd -- Run this on Ops Station
+cat /boot/grub/grub.cfg //Looking at Grub configuration in Linux to find the Kernel
+ltrace -S cat /etc/passwd //Showing System calls in Linux
+ltrace -S lsmod //Modules in Linux
+dd if=<pathtofile> bs=1 skip=<value> count<answer>
