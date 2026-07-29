@@ -5,3 +5,5 @@ https://www.magnetforensics.com/blog/forensic-analysis-of-prefetch-files-in-wind
 https://nasbench.medium.com/windows-forensics-analysis-windows-artifacts-part-ii-71b8fa68d8a1 //JumpLists Documentation 
 https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/Default.aspx //A more inclusive list of Windows Security Log Events
 https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.host/start-transcript?view=powershell-6#syntax //Start-Transcript Documentation
+https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/get-history?view=powershell-6 //Get-History Documentation
+https://www.fireeye.com/blog/threat-research/2016/02/greater_visibilityt.html //Script Block Logging
