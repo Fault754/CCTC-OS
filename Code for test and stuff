@@ -17,3 +17,4 @@ dd if=<pathtofile> bs=1 skip=<value> count<answer>
 .\sigcheck.exe -m C:\Windows\System32\slui.exe -accepteula //Stops the EULA window from showing up to be better hidden
 .\strings.exe -accepteula -a <file path> //
 netsh advfirewall show publicprofile logging // NOTHING WE EVER COVERED
+Get-WinEvent -FilterHashtable @{ ProviderName = 'Eventlog' } //
