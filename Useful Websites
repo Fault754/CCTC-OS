@@ -1,3 +1,6 @@
-https://in-addr.nl/mirror/SANS-Digital-Forensics-and-Incident-Response-Poster-2012.pdf
-https://resources.infosecinstitute.com/windows-systems-and-artifacts-in-digital-forensics-part-i-registry/
-https://www.magnetforensics.com/blog/forensic-analysis-of-prefetch-files-in-windows/
+https://in-addr.nl/mirror/SANS-Digital-Forensics-and-Incident-Response-Poster-2012.pdf //SANS Windows Artifact Analysis
+https://resources.infosecinstitute.com/windows-systems-and-artifacts-in-digital-forensics-part-i-registry/ //Forensically relevent Registry Locations
+https://www.aldeid.com/wiki/Windows-userassist-keys //Windows User Assist Key Additional Information
+https://www.magnetforensics.com/blog/forensic-analysis-of-prefetch-files-in-windows/ //Prefetch Documentation
+https://nasbench.medium.com/windows-forensics-analysis-windows-artifacts-part-ii-71b8fa68d8a1 //JumpLists Documentation 
+https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/Default.aspx //A more inclusive list of Windows Security Log Events
