@@ -18,3 +18,6 @@ dd if=<pathtofile> bs=1 skip=<value> count<answer>
 .\strings.exe -accepteula -a <file path> //
 netsh advfirewall show publicprofile logging // NOTHING WE EVER COVERED
 Get-WinEvent -FilterHashtable @{ ProviderName = 'Eventlog' } //
+jq -r '."id.orig_h"' conn.log | sort | uniq -c //search a JSON file sorting it and filtering out all uniqe items from a Propertytype
+jq '[. | select(."resp_ip_bytes" > 40) | ."id.resp_h"] | length' conn.log > conn.txt | grep -o '1' conn.txt | wc -l //
+xpath -q -e '//host[ports/port/state[@state="open"]]/address/@addr | //host/ports/port[state[@state="open"]]/@portid' output.xml | md5sum //
