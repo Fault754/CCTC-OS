@@ -7,3 +7,17 @@ https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/Default.aspx //
 https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.host/start-transcript?view=powershell-6#syntax //Start-Transcript Documentation
 https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/get-history?view=powershell-6 //Get-History Documentation
 https://www.fireeye.com/blog/threat-research/2016/02/greater_visibilityt.html //Script Block Logging
+https://man7.org/linux/man-pages/man5/rsyslog.conf.5.html //rsyslog.conf -- Linux manual page
+https://www.thegeekdiary.com/centos-redhat-beginners-guide-to-log-file-administration/ //Syslog conf file walkthrough
+https://linux.die.net/man/8/syslogd //Syslogd man page
+https://www.freebsd.org/cgi/man.cgi?query=syslog.conf&sektion=5&n=1 //FREEBSD syslog.conf man page
+
+
+
+
+
+
+
+
+
+
