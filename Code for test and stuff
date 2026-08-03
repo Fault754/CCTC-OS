@@ -21,3 +21,18 @@ Get-WinEvent -FilterHashtable @{ ProviderName = 'Eventlog' } //
 jq -r '."id.orig_h"' conn.log | sort | uniq -c //search a JSON file sorting it and filtering out all uniqe items from a Propertytype
 jq '[. | select(."resp_ip_bytes" > 40) | ."id.resp_h"] | length' conn.log > conn.txt | grep -o '1' conn.txt | wc -l //
 xpath -q -e '//host[ports/port/state[@state="open"]]/address/@addr | //host/ports/port[state[@state="open"]]/@portid' output.xml | md5sum //
+
+------------------------------------------------------------0 Pointer------------------------------------------------------------
+
+#!/bin/bash
+
+SERVICE=$(grep -oP '\d+/(tcp|udp)\s+open\s+\K\S+' "NMAP_all_hosts.txt" | sort -u)
+
+for e in $SERVICE; do
+
+        awk -v s=$e '/Nmap scan report for/ {ip = $5} $0 ~ s {found[ip]} END {print "Service: " s " Count:", length(found), "\n=============================="; for (i in found) print i}' NMAP_all_hosts.tx
+t
+
+        echo -e "\n"
+
+done
