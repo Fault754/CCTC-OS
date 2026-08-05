@@ -30,8 +30,7 @@ SERVICE=$(grep -oP '\d+/(tcp|udp)\s+open\s+\K\S+' "NMAP_all_hosts.txt" | sort -u
 
 for e in $SERVICE; do
 
-        awk -v s=$e '/Nmap scan report for/ {ip = $5} $0 ~ s {found[ip]} END {print "Service: " s " Count:", length(found), "\n=============================="; for (i in found) print i}' NMAP_all_hosts.tx
-t
+        awk -v s=$e '/Nmap scan report for/ {ip = $5} $0 ~ s {found[ip]} END {print "Service: " s " Count:", length(found), "\n=============================="; for (i in found) print i}' NMAP_all_hosts.txt
 
         echo -e "\n"
 
